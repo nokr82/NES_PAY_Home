@@ -162,7 +162,7 @@ if ($_GET['endDate'] == '') {
                             echo "   <tr>
                         <td>{$row['APRV_NO']}</td>
                         <td>{$row['ORD_DT']}</td>
-                        <td>{$row['INSTALLMENT_CD']}</td>
+                        <td>{$row['SVC_CD']}</td>
                         <td>{$row['MERT_NM']}</td>
                         <td>{$row['MERT_TEL']}</td>
                         <td>{$row['SUPPLY_AMT']}원</td>
