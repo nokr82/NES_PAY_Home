@@ -1,0 +1,1188 @@
+@import '_common';
+
+body {position: relative;}
+.mask {
+	position: absolute;
+	width:100vw;height:100%;
+	left:0; top:0;
+	background: rgba(0,0,0,.5);
+	z-index: 10;
+}
+
+.pop_area {
+	position: fixed;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);    
+	z-index: 100;
+}
+
+
+
+#header {
+	.inner_wrap {
+		overflow: hidden;
+		max-width: 1380px;
+		margin  : 0 auto;
+	}
+
+	.logo {
+		float     : left;
+	//	width     : 133px;
+		margin-top: 3px;
+		margin-left: 3px;
+		//margin-top: 32px;
+		width     : 114px;
+	}
+	
+
+	.gnb {
+		width:55%;
+		min-width:670px;
+		float      : right;
+
+		ul {overflow: hidden;}
+		li {
+			float       : left;
+			width:20%;
+			line-height : 58px;
+			text-align: center;
+
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			a {
+				color          : #fff;
+				font-size      : 18px;
+				text-decoration: none;
+				letter-spacing : 0.3px;
+				line-height: 100px;
+
+				&.on {
+					padding-bottom: 5px;
+					border-bottom : 2px solid #fff;
+				}
+			}
+		}
+	}
+}
+
+//홈페이지 -메인페이지
+.mainBody {
+	//height: 1131px; 이거 뭐징..
+
+	#wrap {
+		width     : 100%;
+		min-width:1280px;
+		min-height    : 100%;
+		padding-bottom: 38px;
+		background: url('../images/bg_main.jpg') no-repeat left top/cover;
+	}	
+}
+
+.main_desc {
+	margin    : 324px 0 305px;
+	color     : #ffffff;
+	text-align: center;
+
+	h2 {
+		font-size: 54px;
+
+		strong {
+			color: $accentColor
+		}
+	}
+
+	p {
+		margin-top : 30px;
+		font-size  : 40px;
+		font-weight: 100;
+
+		strong {
+			font-size  : 46px;
+			font-weight: 300;
+		}
+	}
+}
+
+.policy {
+	width : 220px;
+	margin: 0 auto;
+
+	a {
+		color          : #fff;
+		font-size      : 16px;
+		text-decoration: none;
+
+		&:first-child {
+			margin-right: 41px;
+		}
+	}
+
+	&.sub {
+		margin-top: 79px;
+
+		a {
+			color: $basicIndigo;
+		}
+	}
+}
+
+#footer {
+	overflow  : hidden;
+	max-width     : 1400px;
+//	min-width:1000px;
+	margin    : 16px auto 0;
+	color     : #fff;
+	font-size : 14px;
+	border-top: 1px solid #fff;
+
+	.company_info {
+		float      : left;
+		padding    : 15px 0 0 20px;
+		line-height: 24px;
+
+		.name {
+			font-size  : 18px;
+			line-height: 25px;
+			font-weight: 100;
+		}
+
+		.business_info span,
+		.tel_info span {
+			position   : relative;
+			font-weight: 100;
+
+			&:first-child {
+				padding-left: 2px;
+			}
+		}
+
+		.business_info span:after,
+		.tel_info span:after {
+			content   : '';
+			display   : inline-block;
+			width     : 1px;
+			height    : 9px;
+			margin    : 0 17px 0 20px;
+			background: #fff;
+		}
+
+		.business_info span:last-child:after,
+		.tel_info span:last-child:after {
+			display: none;
+		}
+
+		.address {
+			font-weight: 100;
+		}
+	}
+
+	.logo {
+		float : right;
+		margin: 7px 5px 0 0;
+		width:152px;
+	}
+
+	&.sub {
+		//margin    : 15px auto;
+		color     : $basicIndigo;
+		border-top: 1px solid $basicIndigo;
+
+		.business_info span:after,
+		.tel_info span:after {
+			background: $basicIndigo;
+		}
+	}
+}
+
+.copyright {
+	font-size  : 12px;
+	font-weight: 100;
+	color      : #fff;
+	text-align : center;
+
+	&.sub {
+		color: $basicIndigo;
+	}
+}
+
+/*--------------------------------------------------------------------------------
+	# 홈페이지 - service
+---------------------------------------------------------------------------------*/
+.container_service {
+	//min-width:1400px;
+	margin-top: -100px;
+
+	.service_desc {
+		padding-top   : 249px;
+		padding-bottom: 148px;
+		background    : url(../images/service_visual_main.jpg) no-repeat top center/cover;
+
+		h2 {
+			width      : 100%;
+			max-width:1380px;
+			margin     : 0 auto 39px;
+			font-size  : 48px;
+			line-height: 0.5;
+			color      : #fff
+		}
+
+		p {
+			width      : 100%;
+			max-width:1380px;
+			margin     : 0 auto;
+			font-weight: 100;
+			font-size  : 30px;
+			line-height: 1.53;
+			color      : #fff
+		}
+	}
+
+	.box_content {
+	//	min-width:1000px;
+		max-width:1400px;
+		margin: 0 auto;
+	}
+	.wrap_process_service {
+		overflow: hidden;
+		//padding: 0 28px;
+		padding:0 2%;
+
+		.group, .process_memo {float: left;}
+
+		.group {
+			width:10.7%;
+
+			dt {
+				position: relative;
+				widows: 100%;; height: 150px;
+				border-radius: 50%;
+				text-align: center;
+				background: #eee;
+
+				img {
+					position: absolute;
+					left:50%;
+					top:50%;
+				}
+
+				.icon_customer {
+					width:56px;
+					margin-left: -28px;
+					margin-top:-38px;
+				}
+				.icon_affiliate, .icon_ven {
+					width:76px;
+					margin-left: -38px;
+					margin-top: -38px;
+				}
+				.icon_nepay {
+					width:124px;
+					margin-left: -64px;
+					margin-top: -52px;
+				}				
+			}
+			dd{
+				padding-top: 9px;
+				font-size: 16px;
+				text-align: center;
+				color:$subtitIndigo;				
+			}
+		}
+
+		.process_txt {
+			padding-top: 17px;
+			//padding-left: 49px;
+			padding-left: 21%;
+			font-size: 14px;
+			color:$basicIndigo;
+			font-weight: 100;
+
+			&.txt_bottom {
+				padding-top: 86px;
+				padding-right: 48px;
+				text-align: right;
+			}
+
+			&.txt_bottom_v2 {
+				padding-top: 4px;
+				padding-right: 48px;
+				text-align: right;
+			}
+		}
+
+		.process_memo {		
+			position: relative;
+			//width:243px;
+			width:17.3%;
+
+			.arrow_right {
+				position: absolute;
+				//width: 144px;
+				width:62%;
+				height:33px;
+				top:42px;
+				left:49px;
+
+				&.arw_v1 {
+					background: url(../images/service_process1.png) no-repeat 0 0/contain;
+				}
+				&.arw_v2 {
+					background: url(../images/service_process2.png) no-repeat 0 0/contain;
+				}
+				&.arw_v3 {
+					background: url(../images/service_process3.png) no-repeat 0 0/contain;
+				}
+			}
+
+			.arrow_left {
+				position: absolute;
+				//width:144px;
+				width:62%;
+				height: 33px;
+				top:72px;
+				left:49px;
+
+				&.arw_v1 {
+					background: url(../images/service_process6.png) no-repeat 0 0/contain;
+				}
+				&.arw_v2 {
+					background: url(../images/service_process5_8.png) no-repeat 0 0/contain;
+				}
+
+				&.arw_v3 {
+					background: url(../images/service_process4_7.png) no-repeat 0 0/contain;
+				}
+			}
+		}		
+	}
+}
+
+
+// 홈페이지 서브 헤더
+#wrap_sub {padding-bottom: 39px; min-width:1280px;}
+#wrap_sub #header {	
+	position: relative;
+	height          : 100px;
+	background-color: transparentize($titleIndigo, .6);	
+}
+
+#wrap_sub #container {
+	margin: 0 auto;
+}
+
+
+/*--------------------------------------------------------------------------------
+	# 홈페이지 - 문의 안내
+---------------------------------------------------------------------------------*/
+.wrap_content.qa {
+	max-width:1400px;
+	margin:0 auto;
+}
+.qa_info {
+	float     : left;
+	width     : 283px;
+	margin-top: 78px;
+
+	h2 {
+		font-size: 30px;
+		color    : $titleIndigo;
+	}
+
+	dl {
+		margin-top: 37px;
+		margin-left: 6px;
+	}
+
+	dt {
+		margin-top: 23px;
+		font-size : 22px;
+		color     : $basicIndigo;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	dd {
+		margin     : 8px 0 0 0;
+		font-size  : 18px;
+		font-weight: 100;
+		color      : $basicIndigo;
+	}
+}
+
+.qaform {
+	float        : left;
+	width        : calc(100% - 283px);
+	margin-top   : 146px;
+	padding      : 39px 40px;
+	border-radius: 10px;
+	box-sizing   : border-box;
+	box-shadow   : 0 0 24.8px 2.2px rgba(1, 40, 117, 0.15);
+
+	.inp_box {
+		width         : 534px;
+		margin-top    : 17px;
+		padding-bottom: 15px;
+		border-bottom : 1px solid #eee;
+
+		&:first-child {
+			margin-top: 0
+		}
+
+		&.inp_cont {
+			width         : 100%;
+			margin-top    : 39px;
+			padding-bottom: 20px;				
+		}
+
+		label {
+			width      : 100px;
+			font-size  : 20px;
+			font-weight: 100;
+			color      : $basicIndigo;
+		}
+
+		input {
+			width    : 430px;
+			color    : #949494;
+			border   : none;
+			padding-left: 10px;
+			box-sizing: border-box;
+			font-size: 16px;
+			font-weight: 100;
+			vertical-align: top;
+		}				
+	}
+
+
+	.qa_cont {
+		width      : 100%;
+		height     : 160px;
+		padding-top: 10px;
+		border     : 0 none;
+		resize:none;
+		color      : #949494;
+		font-weight: 100;
+		font-size  : 16px;
+	}
+
+	#btnSubmit {
+		float     : right;
+		width     : 160px;
+		height    : 55px;
+		margin-top: 26px;
+		color     : #fff;
+		font-size : 18px;
+		text-align: center;
+		border    : none;
+		background: #012875;
+	}
+}
+
+/*--------------------------------------------------------------------------------
+	# 홈페이지 - 신용카드 결제내역 검색
+---------------------------------------------------------------------------------*/
+.tit_sty1 {
+	padding  : 80px 0 39px;
+	font-size: 30px;
+	color    : $titleIndigo;
+}
+
+.wrap_payment_history {		
+	background    : #eee;
+
+	.inner_wrap {
+		max-width:1400px;
+		padding-bottom: 40px;
+		margin:0 auto;
+	}
+
+	.list {
+		width:749px;
+		margin: 0 auto;
+		
+		dl {
+			overflow     : hidden;
+			margin-bottom: 5px;
+			border       : 1px solid #d5d5d5;
+		}
+
+		dt,
+		dd {
+			float    : left;
+			font-size: 16px;
+			color    : $basicIndigo;
+		}
+
+		dt {
+			width       : 165px;
+			height      : 55px;
+			padding-left: 20px;
+			border-right: 1px solid #d5d5d5;
+			line-height : 55px;
+			box-sizing  : border-box;
+		}
+
+		dd {
+			padding-left: 40px;
+			line-height : 55px;
+		}
+
+		.confirm_num,
+		.confirm_email {
+			margin-top: 18px;
+			border    : none;
+			background: transparent;
+		}
+
+		.custom_radiobox {
+			&:first-child {
+				width: 152px;
+			}
+
+			.checkmark {
+				top: -3px;
+			}
+		}
+
+		.wrap_calendar {
+			&:after {
+				content    : " ";
+				display    : inline-block;
+				position   : relative;
+				top        : 7px;
+				width      : 25px;
+				height     : 25px;
+				margin-left: 7px;
+				background : url('../images/ico_calendar.png') no-repeat left top;
+			}
+
+			input {
+				width     : 90px;
+				height    : 25px;
+				border    : none;
+				background: #fff;
+			}
+
+		}
+
+		.inp_line {
+			margin: 0 10px;
+		}
+
+		.notice_isp {
+			margin-bottom: 5px;
+			color        : $accentColor;
+			font-size    : 12px;
+		}
+
+		.tit_captcah {
+			height     : 70px;
+			line-height: 70px;
+		}
+
+		.box_captcha,
+		.write_captcah {
+			float: left;
+		}
+
+		.box_captcha {
+			margin: 10px 0
+		}
+
+		.write_captcah {
+			margin-left: 21px;
+
+			.notice {
+				display    : block;
+				margin     : 4px 0 5px;
+				font-size  : 14px;
+				line-height: 24px;
+			}
+
+			.inp_box {
+				input {
+					width     : 90px;
+					height    : 25px;
+					border    : none;
+					background: #fff;
+				}
+			}
+		}
+	}
+
+	.btn_lookup {
+		@include btnCenter(160px, 55px);
+	}
+}
+
+.wrap_transaction_history {
+	.inner_wrap {
+		max-width : 1400px;
+		margin: 0 auto;
+	}
+}
+
+
+/*--------------------------------------------------------------------------------
+	# 홈페이지 - 이용약관
+---------------------------------------------------------------------------------*/
+.wrap_yakwan {max-width:1400px; margin: 0 auto;}
+.wrap_yakwan h2 {
+	margin   : 80px 0 39px;
+	font-size: 30px;
+	color    : $titleIndigo;
+}
+
+.wrap_yakwan .box_content {
+	overflow  : auto;
+	width     : 100%;
+	height    : 500px;
+	padding   : 40px;
+	font-size : 12px;
+	border    : 1px solid #d5d5d5;
+	box-sizing: border-box;
+}
+
+
+
+/*--------------------------------------------------------------------------------
+	# 홈페이지 - 문의안내
+---------------------------------------------------------------------------------*/
+
+#wrap_admin {
+	background: #f3f3f3 url('../images/bg_triangle_container.png') no-repeat left 0;
+
+	#header {
+	position  : relative;
+    height    : 100px;
+    background: #fff;
+    background: url('../images/bg_header.jpg') no-repeat left top;
+
+
+		.inner_wrap {
+			overflow: hidden;
+			margin  : 0 100px;
+		}	
+
+		.gnb {
+			position   : relative;
+			z-index    : 30;
+			float      : left;
+			margin-left: 298px;
+			padding-top: 32px;
+			font-weight: 100;
+
+			>ul>li {
+				float         : left;
+				width         : 117px;
+				margin-right  : 81px;
+				padding-bottom: 6px;
+				line-height   : 56px;
+				text-align    : center;
+
+				&:last-child {
+					margin-right: 0;
+				}
+
+				&.on {
+					>a {
+						color        : #0f4c82;
+						border-bottom: 2px solid #0f4c82;
+					}
+				}
+
+				a {
+					display        : block;
+					padding-bottom : 10px;
+					color          : #6a6a6a;
+					font-size      : 20px;
+					text-decoration: none;
+					letter-spacing : 0.3px;
+					font-weight    : 300;
+				}
+			}
+
+			.depth2 {
+				overflow: hidden;
+				z-index : 30;
+				display : none;
+
+				li {
+					margin     : 13px 0;
+					line-height: 1;
+				}
+
+				li:first-child {
+					padding-top: 14px;
+					text-align : center;
+				}
+
+				a {
+					font-size: 15px;
+					color    : #b1b1b1;
+
+					&:hover {
+						color: #ff9e01;
+					}
+				}
+			}
+		}
+
+		.bg_depth2 {
+			display   : none;
+			position  : absolute;
+			z-index   : 10;
+			top       : 100px;
+			left      : 0;
+			width     : 100%;
+			height    : 320px;
+			background: rgba(0, 0, 0, 0.7);
+		}
+	}
+
+	.user_info {
+		.box_user {
+			float     : right;
+			width     : 53px;
+			height    : 53px;
+			margin    : 24px 3px 0 0;
+			cursor    : pointer;
+			background: url('../images/bg_user.png') no-repeat left top;
+		}
+	}
+}
+
+
+/*--------------------------------------------------------------------------------
+	# 홈페이지 - 신용카드 결제내역 검색
+---------------------------------------------------------------------------------*/
+// .tit_sty1 {
+// 	padding  : 50px 0 20px;
+// 	font-size: 30px;
+// 	color    : $titleIndigo;
+// }
+
+.tit_sty2 {
+	padding  : 27px 0 18px;
+	font-size: 24px;
+	color    : #242424;
+}
+
+.admin_container {
+	padding: 0 100px;
+}
+
+.pb0 {
+	padding-bottom: 0;
+}
+
+.wrap_admin_layer {
+	position     : relative;
+	padding      : 0 25px 70px;
+	border-radius: 10px;
+	box-shadow   : 0px 10px 20px 0 rgba(0, 0, 0, 0.2);
+	box-sizing   : border-box;
+	background   : url('../images/bg_triangle2.png') no-repeat right bottom/270px #ffffff;
+
+
+
+	.inner_wrap {
+		margin: 0 auto;
+	}
+
+	.wrap_util {
+		position     : relative;
+		margin-bottom: 40px;
+	}
+
+	.box_search1 {
+		dl {
+			overflow: hidden;
+		}
+
+		dt,
+		dd {
+			float    : left;
+			font-size: 18px;
+			color    : $inputGray;
+		}
+
+		dt {
+			height     : 55px;
+			padding    : 0 14px 0 8px;
+			line-height: 55px;
+			box-sizing : border-box;
+		}
+
+		dd {
+			line-height: 55px;
+		}
+
+		.wrap_calendar {
+			padding-bottom: 6px;
+			border-bottom : 1px solid $lineBlue;
+
+			&:after {
+				content    : " ";
+				display    : inline-block;
+				position   : relative;
+				top        : 7px;
+				width      : 25px;
+				height     : 28px;
+				margin-left: 7px;
+				background : url('../images/ico_calendar2.png') no-repeat left top;
+			}
+
+			input {
+				width     : 134px;
+				height    : 25px;
+				border    : none;
+				background: #fff;
+			}
+		}
+
+		.inp_line {
+			margin: 0 13px;
+		}
+	}
+
+	.box_search2 {
+		&.sty2 {
+			padding-left: 8px;
+		}
+
+		margin-top:27px;
+
+		dl,
+		dt,
+		dd {
+			display  : inline;
+			font-size: 18px;
+			color    : $inputGray;
+		}
+
+		.box_id_search {
+			margin-left  : 8px;
+			padding-left : 11px;
+			border-bottom: 1px solid #1684e5;
+
+			input {
+				width: 451px;
+			}
+
+			.btn_ico_search {
+				display   : inline-block;
+				width     : 27px;
+				height    : 28px;
+				background: url('../images/ico_search.png') no-repeat left top;
+			}
+		}
+
+		.box_option_sel {
+			margin: 0 209px;
+		}
+
+		.box_search_option {
+			margin-left: 44px;
+		}
+
+		dl.lst {
+			margin-left: 178px;
+		}
+	}
+
+	.tool {
+		position: absolute;
+		top     : 0;
+		right   : 2px;
+
+		.btn_print,
+		.btn_xls {
+			display: inline-block;
+			height : 36px;
+			cursor : pointer;
+		}
+
+		.btn_print {
+			width       : 36px;
+			margin-right: 44px;
+			background  : url('../images/ico_print.png') no-repeat left top;
+		}
+
+		.btn_xls {
+			width     : 34px;
+			background: url('../images/ico_excel.png') no-repeat left top;
+		}
+	}
+
+	select {
+		min-width         : 170px;
+		margin-left       : 11px;
+		border            : none;
+		border-bottom     : 1px solid $lineBlue;
+		background        : url('../images/arrow_select_blue.png') no-repeat 95% 50%;
+		border-radius     : 0px;
+		-webkit-appearance: none;
+		-moz-appearance   : none;
+		appearance        : none;
+	}
+
+	select::-ms-expand {
+		display: none;
+	}
+
+	.tbl {
+		table-layout: auto;
+
+		.tal {
+			text-align  : left;
+			padding-left: 20px;
+		}
+
+		.code_sty {
+			padding-left: 36px;
+		}
+
+		.holiday_code {
+			padding-left: 32px;
+		}
+
+		.tar {
+			text-align   : right;
+			padding-right: 20px;
+		}
+
+		.status {
+			padding-right: 84px;
+		}
+
+		span {
+			display   : inline-block;
+			word-break: break-all;
+		}
+
+		td {
+			vertical-align: middle;
+		}
+
+		td span.date {
+			max-width: 67px;
+		}
+
+		td span.deal_no {
+			max-width: 72px;
+		}
+
+		td span.id {
+			max-width: 52px;
+		}
+
+		td span.order_no {
+			max-width: 73px;
+		}
+
+		td span.order_date {
+			max-width: 67px;
+		}
+
+		td span.service {
+			max-width: 84px;
+		}
+
+		td span.product_name {
+			max-width: 120px;
+		}
+
+		td span.buyer {
+			max-width: 49px;
+		}
+
+		td span.payment {
+			max-width: 98px;
+		}
+
+		td span.card {
+			max-width: 72px;
+		}
+
+		td span.approval_date {
+			max-width: 67px;
+		}
+
+		td span.response_code {
+			max-width: 30px;
+		}
+
+		td span.deal_status {
+			max-width: 25px;
+		}
+
+		td span.del_cancel {
+			max-width: 25px;
+		}
+
+		td .custom_checkbox {
+			padding-left: 0
+		}
+
+		td .custom_checkbox .checkmark {
+			position: static;
+		}
+
+		.pg_deal_code {
+			max-width: 65px;
+		}
+
+		.check_card {
+			max-width: 30px;
+		}
+	}
+
+	.bar {
+		color: #1684e5
+	}
+
+	.btn_pg_modifiy {
+		padding        : 5px 12px;
+		color          : $accentColor;
+		border         : 1px solid $accentColor;
+		text-decoration: none;
+		background     : #fff;
+	}
+
+	.tbl.master .btn_pg_modifiy {
+		margin-left: 15px
+	}
+
+
+	.btn_new {
+		position  : absolute;
+		right     : 25px;
+		bottom    : 40px;
+		width     : 150px;
+		height    : 40px;
+		cursor    : pointer;
+		background: url('../images/btn_new.png') no-repeat left top;
+	}
+}
+
+@media (max-width: 1700px) {
+	.wrap_admin_layer .box_search2 .box_option_sel {
+		margin: 0 10%
+	}
+	// .tbl td {
+	// 	padding       : 11px 0;
+	// 	vertical-align: middle;
+	// }
+}
+
+
+
+/*--------------------------------------------------------------------------------
+	# 홈페이지 - 신용카드 결제데모
+---------------------------------------------------------------------------------*/
+.wrap_demo {	//신용카드 결제데모
+	width           : 100%;
+	height          : 463px;
+	padding-top     : 50px;
+	background-color: #eeeeee;
+	box-sizing      : border-box;
+
+	#contents {
+		width : 1400px;
+		margin: 0 auto;
+	}
+
+	.notice {
+		margin-bottom: 47px;
+		font-size    : 20px;
+		color        : #fb9e08;
+		text-align   : center;
+
+		.txt {
+			padding-left: 27px;
+			background  : url('../images/ico_demo_info.png') no-repeat left center;
+		}
+	}
+
+	.list_info {
+		overflow: hidden;
+		width   : 652px;
+		height  : 192px;
+		margin  : 0 auto;
+
+		>li {
+			float       : left;
+			width       : 212px;
+			height      : 190px;
+			margin-right: 5px;
+			border      : 1px solid #d5d5d5;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		dl {
+			color: #001b32
+		}
+
+		dt {
+			padding      : 20px 0 20px 35px;
+			border-bottom: 1px solid #d5d5d5;
+			font-size    : 16px;
+			background   : url('../images/ico_dot_demo.png') no-repeat 19px center;
+		}
+
+		dd {
+			padding: 20px 0 0 37px;
+
+			ul>li {
+				margin-bottom: 10px;
+				padding-left : 37px;
+				font-size    : 14px;
+				font-weight: 100;
+				background   : url('../images/ico_line_demo.png') no-repeat 19px 8px;
+			}
+		}
+
+		input {
+			width     : 140px;
+			height    : 25px;
+			margin-top: 5px;
+			border    : none;
+		}
+
+		.demo_payment {
+			padding-right: 21px;
+			box-sizing   : border-box;
+		}
+
+		.txt_demo_payment {
+			margin-left: -21px;
+		}
+		
+		dd {
+			padding: 20px 0 0 0;	
+		}
+	}
+
+	.btn_payment_demo {
+		display    : block;
+		width      : 160px;
+		height     : 55px;
+		margin     : 48px auto 0;
+		color      : #fff;
+		font-size  : 18px;
+		line-height: 55px;
+		text-align : center;
+		cursor     : pointer;
+		background : #012875;
+	}
+}

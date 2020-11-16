@@ -1,0 +1,36 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 능이소프트
+ * Date: 2020-08-18
+ * Time: 오후 1:41
+ */
+
+include_once(CONTROLLER_PHP);
+
+class main extends controllerImpl {
+
+    function index() {
+        $vars['title'] = '능이페이 : PG가 필요하세요? NEPAY를 만나보세요!';
+        $vars['data'] = 'test';
+        $this->display($vars);
+    }
+
+    function service() {
+        $vars['title'] = '서비스';
+        $vars['data'] = 'test';
+        $this->display($vars,'service');
+    }
+
+    function payment_history() {
+        $vars['title'] = '결제내역조회';
+        $vars['data'] = 'test';
+        $this->display($vars,'payment_history');
+    }
+    function qa() {
+        $vars['title'] = '문의안내';
+        $vars['data'] = 'test';
+        $this->display($vars,'qa');
+    }
+}
+
