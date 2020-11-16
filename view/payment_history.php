@@ -160,7 +160,7 @@ if ($_GET['endDate'] == '') {
                             $row['MERT_TEL'] = decrypt_aes($row['ENKEY'], $row['MERT_TEL']);
 
                             echo "   <tr>
-                        <td>{$row['TRD_NO']}</td>
+                        <td>{$row['APRV_NO']}</td>
                         <td>{$row['ORD_DT']}</td>
                         <td>{$row['INSTALLMENT_CD']}</td>
                         <td>{$row['MERT_NM']}</td>

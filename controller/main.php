@@ -59,7 +59,7 @@ class main extends controllerImpl
                 $type = 'PURCH_EMAIL';
                 $data = sha($_GET['data']);
             } else {
-                $type = 'b.TRD_NO';
+                $type = 'b.APRV_NO';
                 $data = $_GET['data'];
             }
 
