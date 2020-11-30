@@ -192,7 +192,7 @@ body { position: relative; }
 
 .wrap_payment_history .inner_wrap { max-width: 1400px; padding-bottom: 40px; margin: 0 auto; }
 
-.wrap_payment_history .list { width: 749px; margin: 0 auto; }
+.wrap_payment_history .list { width: 800px; margin: 0 auto; }
 
 .wrap_payment_history .list dl { overflow: hidden; margin-bottom: 5px; border: 1px solid #d5d5d5; }
 
@@ -204,13 +204,19 @@ body { position: relative; }
 
 .wrap_payment_history .list .confirm_num, .wrap_payment_history .list .confirm_email { margin-top: 18px; border: none; background: transparent; }
 
-.wrap_payment_history .list .custom_radiobox:first-child { width: 152px; }
+.wrap_payment_history .list .custom_radiobox:first-child { width: 223px; }
 
 .wrap_payment_history .list .custom_radiobox .checkmark { top: -3px; }
 
-.wrap_payment_history .list .wrap_calendar:after { content: " "; display: inline-block; position: relative; top: 7px; width: 25px; height: 25px; margin-left: 7px; background: url("../images/ico_calendar.png") no-repeat left top; }
+.wrap_payment_history .list .wrap_calendar { display: inline-block; position: relative; width: 122px; margin-top: 15px; overflow: hidden; vertical-align: top; }
 
-.wrap_payment_history .list .wrap_calendar input { width: 90px; height: 25px; border: none; background: #fff; }
+.wrap_payment_history .list .wrap_calendar:before, .wrap_payment_history .list .wrap_calendar:after { content: " "; display: block; z-index: 0; }
+
+.wrap_payment_history .list .wrap_calendar:before { width: 90px; height: 25px; float: left; background: #fff; }
+
+.wrap_payment_history .list .wrap_calendar:after { width: 25px; height: 25px; float: right; background: url("../images/ico_calendar.png") no-repeat left top; }
+
+.wrap_payment_history .list .wrap_calendar input { display: block; width: 122px; height: 25px; position: absolute; background: none; z-index: 1; cursor: pointer; }
 
 .wrap_payment_history .list .inp_line { margin: 0 10px; }
 
@@ -228,7 +234,7 @@ body { position: relative; }
 
 .wrap_payment_history .list .write_captcah .inp_box input { width: 90px; height: 25px; border: none; background: #fff; }
 
-.wrap_payment_history .btn_lookup { display: block; width: 160px; height: 55px; margin: 20px auto 0; color: #fff; font-size: 18px; text-align: center; line-height: 55px; background: #012875; }
+.wrap_payment_history .btn_lookup { display: block; width: 160px; height: 55px; margin: 20px auto 0; color: #fff; font-size: 18px; text-align: center; line-height: 55px; background: #012875; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 
 .wrap_transaction_history .inner_wrap { max-width: 1400px; margin: 0 auto; }
 
@@ -410,7 +416,7 @@ body { position: relative; }
 
 .wrap_demo .list_info { overflow: hidden; width: 652px; height: 192px; margin: 0 auto; }
 
-.wrap_demo .list_info > li { float: left; width: 212px; height: 190px; margin-right: 5px; border: 1px solid #d5d5d5; }
+.wrap_demo .list_info > li { float: left; width: 321px; height: 190px; margin-right: 6px; border: 1px solid #d5d5d5; }
 
 .wrap_demo .list_info > li:last-child { margin-right: 0; }
 
@@ -418,17 +424,17 @@ body { position: relative; }
 
 .wrap_demo .list_info dt { padding: 20px 0 20px 35px; border-bottom: 1px solid #d5d5d5; font-size: 16px; background: url("../images/ico_dot_demo.png") no-repeat 19px center; }
 
-.wrap_demo .list_info dd { padding: 20px 0 0 37px; }
+.wrap_demo .list_info dd { padding: 20px 0 0 0; }
 
 .wrap_demo .list_info dd ul > li { margin-bottom: 10px; padding-left: 37px; font-size: 14px; font-weight: 100; background: url("../images/ico_line_demo.png") no-repeat 19px 8px; }
 
-.wrap_demo .list_info input { width: 140px; height: 25px; margin-top: 5px; border: none; }
+.wrap_demo .list_info input { display: block; width: 248px; height: 25px; margin-top: 6px; padding: 0 11px; border: none; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-.wrap_demo .list_info .demo_payment { padding-right: 21px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.wrap_demo .list_info .paydemo_box { position: relative; }
 
-.wrap_demo .list_info .txt_demo_payment { margin-left: -21px; }
+.wrap_demo .list_info .txt_demo_payment { position: absolute; right: 47px; top: 5px; }
 
-.wrap_demo .list_info dd { padding: 20px 0 0 0; }
+.wrap_demo .list_info .demo_payment { padding-right: 33px; }
 
 .wrap_demo .btn_payment_demo { display: block; width: 160px; height: 55px; margin: 48px auto 0; color: #fff; font-size: 18px; line-height: 55px; text-align: center; cursor: pointer; background: #012875; }
 /*# sourceMappingURL=homepage.css.map */

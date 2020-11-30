@@ -19,7 +19,6 @@ if ($_GET['endDate'] == '') {
 <div id="skipnavigation">
     <ul>
         <li><a href="#contents">본문 바로가기</a></li>
-        f
         <li><a href="#gnb">대 메뉴 바로가기</a></li>
     </ul>
 </div>
@@ -40,11 +39,11 @@ if ($_GET['endDate'] == '') {
                             <dl>
                                 <dt>카드 종류 선택</dt>
                                 <dd>
-                                    <label class="custom_radiobox radio_contain">인터넷 안전결제(ISP)
+                                    <label class="custom_radiobox radio_contain">인터넷 안전결제 : 국민카드/BC카드
                                         <input type="radio" name="isp" class="isp" value="isp" checked="">
                                         <span class="checkmark"></span>
                                     </label>
-                                    <label class="custom_radiobox radio_contain">안심클릭: ISP 제외카드
+                                    <label class="custom_radiobox radio_contain">안심클릭 : 국민카드/BC카드 제외한 모든 카드사
                                         <input type="radio" name="isp" class="notisp" value="isp" checked="">
                                         <span class="checkmark"></span>
                                     </label>
@@ -82,26 +81,26 @@ if ($_GET['endDate'] == '') {
                             <dl>
                                 <dt>결제 일자</dt>
                                 <dd>
-                                    <span class="wrap_calendar"><input autocomplete="off" type="text" class="date"
+                                    <span class="wrap_calendar"><input autocomplete="off"  type="text" class="date"
                                                                        name="startDate"
-                                                                       value="<?= $_GET['startDate'] ?>"/></span>
+                                                                       value="<?= $_GET['startDate'] ?>" readonly/></span>
                                     <span class="inp_line"> - </span>
                                     <span class="wrap_calendar"><input autocomplete="off" type="text" class="date"
                                                                        name="endDate"
-                                                                       value="<?= $_GET['endDate'] ?>"/></span>
+                                                                       value="<?= $_GET['endDate'] ?>" readonly/></span>
                                 </dd>
                             </dl>
                         </li>
-                        <li>
+                        <!-- <li> -->
                             <!--                            <dl>-->
                             <!--                                <dt>기타 정보 (E-mail)</dt>-->
                             <!--                                <dd>-->
                             <!--                                    <input type="email" name="confirm_email" class="confirm_email" value="" placeholder="이메일을 입력해 주세요." />-->
                             <!--                                </dd>-->
                             <!--                            </dl>-->
-                            <p class="notice_isp">* ISP 카드거래의 경우, 개인정보보호 강화를 위해 결제내역을 받은 E-mail 주소를 추가 기입하셔야 조회할 수
-                                있습니다.</p>
-                        </li>
+                            <!-- <p class="notice_isp">* ISP 카드거래의 경우, 개인정보보호 강화를 위해 결제내역을 받은 E-mail 주소를 추가 기입하셔야 조회할 수
+                                있습니다.</p> -->
+                        <!-- </li> -->
                         <li>
                             <dl>
                                 <dt class="tit_captcah">보안 문자</dt>

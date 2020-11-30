@@ -27,6 +27,7 @@ textarea,select {font-family: 'Malgun Gothic', "맑은 고딕", AppleGothic, Dot
 
 select { margin : 0; height: 30px; margin-right: 3px; border : 1px solid #dcdcdc; line-height : 32px; -webkit-appearance: none; -moz-appearance   : none; }
 
+button {border: 0; padding: 0;}
 
 caption, legend, .blind { position : absolute; width : 1px; height : 1px; padding : 0; margin     : -1px; overflow   : hidden; clip : rect(0, 0, 0, 0); border : 0; *visibility: hidden; }
 

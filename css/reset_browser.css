@@ -153,3 +153,10 @@ form { margin: 0; }
   * Remove most spacing between table cells.
   */
  table { border-collapse: collapse; border-spacing : 0; width:100%}
+
+  
+fieldset { border : 0; margin : 0; padding: 0; }
+img { width:100%; vertical-align: middle; }
+
+::-moz-selection { background : #b3d4fc; text-shadow: none; }
+::selection { background : #b3d4fc; text-shadow: none; }

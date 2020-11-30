@@ -49,27 +49,15 @@ include_once HEAD;
                                             <input type="text" id="itemnm" name="itemnm" class="demo_product"/>
                                         </li>
                                         <li>결제금액
-                                            <span class="">
-                                            <input type="text" id="amount" name="amount" class="demo_payment"/>
-                                            <span class="txt_demo_payment">원</span>
-                                        </span>
+                                            <div class="paydemo_box">
+                                                <input type="text" id="amount" name="amount" class="demo_payment"/>
+                                                <span class="txt_demo_payment">원</span>
+                                            </div>
                                         </li>
                                     </ul>
                                 </dd>
                             </dl>
-                        </li>
-                        <li>
-                            <dl class="item">
-                                <dt class="tit">구매자 정보</dt>
-                                <dd class="cont">
-                                    <ul class="">
-                                        <li>구매자 명
-                                            <input type="text" id="username" name="username" class="demo_buyer"/>
-                                        </li>
-                                    </ul>
-                                </dd>
-                            </dl>
-                        </li>
+                        </li>                        
                     </ul>
                     <span class="btn_payment_demo">결제 데모</span>
 
